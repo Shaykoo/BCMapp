@@ -26,6 +26,34 @@ import { RpoComponent } from './rpo/rpo/rpo.component';
 import { ServicesComponent } from './services/services/services.component';
 import { SubProductsComponent } from './sub-products/sub-products/sub-products.component';
 import { SubServicesComponent } from './sub-services/sub-services/sub-services.component';
+import { GestureConfig,
+	MatButtonModule,
+	MatCheckboxModule,
+	MatFormFieldModule,
+	MatDialogModule,
+	MatTabsModule,
+	MatProgressSpinnerModule,
+	MatMenuModule,
+	MatIconModule,
+	MatInputModule,
+	MatSelectModule,
+	MatToolbarModule,
+	MatCardModule,
+	MatChipsModule,
+	MatListModule,
+	MatTooltipModule,
+	MatNativeDateModule,
+	MatDatepickerModule,
+	MatTableModule,
+	MatPaginatorModule,
+	MatProgressBarModule,
+	MatSortModule,
+	MatSnackBarModule,
+	MatStepperModule,
+	MatGridListModule,
+	MatExpansionModule,
+	MatRadioModule,
+	MatBadgeModule } from '@angular/material';
 
 
 @NgModule({
@@ -33,7 +61,34 @@ import { SubServicesComponent } from './sub-services/sub-services/sub-services.c
   imports: [
     CommonModule,
     NgbCollapseModule,
-    CoreModule,
+	CoreModule,
+	MatButtonModule,
+  MatCheckboxModule,
+  MatFormFieldModule,
+  MatDialogModule,
+  MatTabsModule,
+  MatProgressSpinnerModule,
+  MatMenuModule,
+  MatIconModule,
+  MatInputModule,
+  MatSelectModule,
+  MatToolbarModule,
+  MatCardModule,
+  MatChipsModule,
+  MatListModule,
+  MatTooltipModule,
+  MatNativeDateModule,
+  MatDatepickerModule,
+  MatTableModule,
+  MatPaginatorModule,
+  MatProgressBarModule,
+  MatSortModule,
+  MatSnackBarModule,
+  MatStepperModule,
+  MatGridListModule,
+  MatExpansionModule,
+  MatRadioModule,
+  MatBadgeModule,
 		PartialsModule,
     RouterModule.forChild([
 			{
@@ -50,7 +105,7 @@ import { SubServicesComponent } from './sub-services/sub-services/sub-services.c
 						path: 'products',
 						component: ProductsComponent
 					},
-			{path: 'critical-deadlines', component: CriticalDeadlinesComponent , pathMatch: 'full'},
+			{path: 'critical-deadlines', component: CriticalDeadlinesComponent},
 			{path: 'critically-definitions', component: CriticallyDefinitionsComponent},
 			{path: 'dependency-types', component: DependencyTypesComponent},
 			{path: 'impact-critically-rating', component: ImpactCriticallyRatingComponent},
@@ -72,7 +127,36 @@ import { SubServicesComponent } from './sub-services/sub-services/sub-services.c
 				]
 			},
 		]),
-  ]
+  ],
+  exports: [
+	MatButtonModule,
+MatCheckboxModule,
+MatFormFieldModule,
+MatDialogModule,
+MatTabsModule,
+MatProgressSpinnerModule,
+MatMenuModule,
+MatIconModule,
+MatInputModule,
+MatSelectModule,
+MatToolbarModule,
+MatCardModule,
+MatChipsModule,
+MatListModule,
+MatTooltipModule,
+MatNativeDateModule,
+MatDatepickerModule,
+MatTableModule,
+MatPaginatorModule,
+MatProgressBarModule,
+MatSortModule,
+MatSnackBarModule,
+MatStepperModule,
+MatGridListModule,
+MatExpansionModule,
+MatRadioModule,
+MatBadgeModule
+]
 })
 
 export class BiaModule { }
